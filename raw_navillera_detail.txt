@@ -1,0 +1,628 @@
+{
+  "id": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+  "tmdbId": 119464,
+  "imdbId": "tt13885302",
+  "title": "Navillera",
+  "slug": "navillera-2021",
+  "originalTitle": "\ub098\ube4c\ub808\ub77c",
+  "overview": "A 70-year-old with a dream and a 23-year-old with a gift lift each other out of harsh realities and rise to the challenge of becoming ballerinos.",
+  "tagline": "While your legs are strong and your head is clear, do what you have always wanted to do.",
+  "posterPath": "/pBd6pEhszsWk95TrUqo4bdXhH8T.jpg",
+  "backdropPath": "/ylS5KdDgb8s4Y7P3sDifrizvmA4.jpg",
+  "logoPath": "/czQCUwo2j7wJhp1ItQ0DdxrKvtj.png",
+  "backdrops": [
+    "/ylS5KdDgb8s4Y7P3sDifrizvmA4.jpg",
+    "/iSAH9nH10hke3IW9woUSnTmSHm4.jpg",
+    "/oiM1fNM6ZFYo2g231RdvmnvWkp3.jpg",
+    "/td2DHI3Yk1HX8PkLQdUDjIayiU8.jpg",
+    "/tXQJ6TjVIgvU2k6FEt1S3Pu0EgF.jpg",
+    "/7OMIdafbdvjo1Xt0ZM8CSoIXK5G.jpg",
+    "/zSyb2u8elaCifxmxZxZMk0kALqB.jpg",
+    "/pa7Y0hIKiHB23jiFINzMe8L8uQd.jpg",
+    "/yHKs4QS9hE24yxXxfxEXOBYm0aE.jpg",
+    "/qFI1QfPu8sS551JqbIp55ZAGlHE.jpg"
+  ],
+  "firstAirDate": "2021-03-22",
+  "numberOfSeasons": 1,
+  "numberOfEpisodes": 12,
+  "voteAverage": "8.60",
+  "popularity": "7.674",
+  "popularityScore": 65,
+  "originalLanguage": "ko",
+  "country": "KR",
+  "trailerUrl": "https://www.youtube.com/watch?v=YtK3Vtw4rno",
+  "status": "Ended",
+  "networks": [
+    {
+      "id": 866,
+      "name": "tvN",
+      "logo_path": "/aRDq8zBrX3YLpHSfueNQBkNnn7b.png",
+      "origin_country": "KR"
+    }
+  ],
+  "productionCompanies": [
+    {
+      "id": 86418,
+      "name": "Studio Dragon",
+      "logo_path": "/vzzqRwqTin3iAAMw2JlrmVPNnPa.png"
+    },
+    {
+      "id": 149893,
+      "name": "The Great Show",
+      "logo_path": "/e2iPF7lzT8pGthv4SxJl9Y8618M.png"
+    }
+  ],
+  "keywords": [
+    {
+      "id": 1566,
+      "name": "dreams"
+    },
+    {
+      "id": 2587,
+      "name": "married couple"
+    },
+    {
+      "id": 6054,
+      "name": "friendship"
+    },
+    {
+      "id": 10235,
+      "name": "family relationships"
+    },
+    {
+      "id": 10551,
+      "name": "ballet"
+    },
+    {
+      "id": 34004,
+      "name": "second chance"
+    },
+    {
+      "id": 191446,
+      "name": "inspiring"
+    },
+    {
+      "id": 287476,
+      "name": "heartfelt"
+    },
+    {
+      "id": 288474,
+      "name": "based on webcomic or webtoon"
+    }
+  ],
+  "createdBy": [],
+  "importedBy": "b07dbd00-847c-4b35-838a-56f4ed0ad1f4",
+  "viewCount": 307,
+  "watchlistCount": 1,
+  "favouriteCount": 1,
+  "shareCount": 0,
+  "isPublished": true,
+  "commentsDisabled": false,
+  "commentsDisabledByRole": null,
+  "commentsDisabledAt": null,
+  "createdAt": "2026-04-02T17:01:54.681Z",
+  "updatedAt": "2026-04-02T17:01:54.681Z",
+  "genres": [
+    {
+      "id": "53d79e6f-3df2-46cb-8a1b-5900e828b1d3",
+      "tmdbId": 18,
+      "name": "Drama",
+      "slug": "drama",
+      "createdAt": "2026-04-02T13:49:03.324Z"
+    }
+  ],
+  "seasons": [
+    {
+      "id": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbId": 183078,
+      "seasonNumber": 1,
+      "name": "Season 1",
+      "overview": "A 70-year-old with a dream and a 23-year-old with a gift lift each other out of harsh realities and rise to the challenge of becoming ballerinos.",
+      "posterPath": "/8XNj2fN7TwSazpRfvE27VJA65SJ.jpg",
+      "airDate": "2021-03-22",
+      "episodeCount": 12,
+      "isPublished": true,
+      "createdAt": "2026-04-02T17:01:54.911Z",
+      "updatedAt": "2026-04-02T17:01:54.911Z"
+    }
+  ],
+  "cast": [
+    {
+      "id": "4d1f8f1c-a88a-408d-a9e4-b436f66dd73f",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1277308,
+      "name": "Park In-hwan",
+      "character": "Sim Deok-chul",
+      "profilePath": "/nQ9gZB2u5SXNnwTU8FLlIVYZBOS.jpg",
+      "order": 0
+    },
+    {
+      "id": "a599a3b6-d831-40a5-9e0a-1f00d9777d3b",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1878952,
+      "name": "Song Kang",
+      "character": "Lee Chae-rok",
+      "profilePath": "/83fLAMMb1LGT8YZ4dgRI0fti3az.jpg",
+      "order": 1
+    },
+    {
+      "id": "7cde9039-51c6-46e7-b2a3-c844e1740e19",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 123808,
+      "name": "Na Moon-hee",
+      "character": "Choi Hae-nam",
+      "profilePath": "/ly5hCJSjgCM0i2JQ0xeWqJZSliR.jpg",
+      "order": 2
+    },
+    {
+      "id": "c999d3bd-4013-486c-b61e-0798e023c844",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 2870602,
+      "name": "Hong Seung-hee",
+      "character": "Sim Eun-ho",
+      "profilePath": "/iF8vAp98sUh0CQ07mhrCB4euHPR.jpg",
+      "order": 3
+    },
+    {
+      "id": "bf2ccd07-7745-4e69-964f-57d09e807fe3",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 552067,
+      "name": "Kim Tae-hun",
+      "character": "Ki Seung-joo",
+      "profilePath": "/8mTd6HpLDFK2cwiWhoyZO78A5n1.jpg",
+      "order": 4
+    },
+    {
+      "id": "35cfc00a-53fa-4351-8390-86b37fc8bb55",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1191490,
+      "name": "Kim Soo-jin",
+      "character": "Sim Seong-suk",
+      "profilePath": "/72tFyGXH1ta8oV0ojOBKi61FIGW.jpg",
+      "order": 5
+    },
+    {
+      "id": "644ce80c-bf47-4a39-8a6c-b968ad68c59f",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 109646,
+      "name": "Yoon Ji-hye",
+      "character": "Eun So-ri",
+      "profilePath": "/7zePMNGe149OzzsyVCdL0Mx1dT2.jpg",
+      "order": 6
+    },
+    {
+      "id": "e6c4aac1-4c42-4240-b30a-03b1b3e5ec07",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 2988444,
+      "name": "Lee So-yeong",
+      "character": "Yoo An-na",
+      "profilePath": "/v8fV4J25t4RqljGus8mmQqW4lSH.jpg",
+      "order": 7
+    },
+    {
+      "id": "33462f66-22c8-4e19-915d-d37bc216bab4",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1171951,
+      "name": "Jung Hae-kyun",
+      "character": "Sim Seong-san",
+      "profilePath": "/laQKRQYrVUL3hvvv3uvXlB2Pz66.jpg",
+      "order": 8
+    },
+    {
+      "id": "de35ca7d-21fc-4d7e-9f53-4ab49a0bd49c",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1428091,
+      "name": "Jo Bok-rae",
+      "character": "Sim Seong-gwan",
+      "profilePath": "/aTzFktB9Z1BcxjUxd33cQROLQnO.jpg",
+      "order": 9
+    },
+    {
+      "id": "817f216c-e625-4bf0-8c30-bb95df8e4128",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1336527,
+      "name": "Shin Eun-jung",
+      "character": "Kim Ae-ran",
+      "profilePath": "/kMljH91HGp7HugKi7hRc7xMKl9M.jpg",
+      "order": 10
+    },
+    {
+      "id": "27dfcc10-e5aa-44c5-af1f-f05f8d8fa6ba",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1344674,
+      "name": "Jung Hee-tae",
+      "character": "Young-il",
+      "profilePath": "/sBw6b7u9f8rE0J7UeByF60YP6YI.jpg",
+      "order": 11
+    },
+    {
+      "id": "b877edac-72e9-4697-a131-a83335f93788",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 551171,
+      "name": "Cho Seong-ha",
+      "character": "Lee Moo-young",
+      "profilePath": "/rVJRXGHjDSWkC58SgBYfMbeAm1t.jpg",
+      "order": 12
+    },
+    {
+      "id": "110352a6-8cd0-4e75-a16f-d2ea4e864b3a",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 2381047,
+      "name": "Kim Hyeon-mok",
+      "character": "Kim Se-jong",
+      "profilePath": "/jyB7cCJoVMPSU6hGxaMq7I0NBg2.jpg",
+      "order": 13
+    },
+    {
+      "id": "f641883b-9c2d-406c-a1bd-b549e0f6a83a",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 1338518,
+      "name": "Kim Kwon",
+      "character": "Yang Ho-bum",
+      "profilePath": "/6ikXQq7EWBtf5lFTDu9D5BSB7uQ.jpg",
+      "order": 14
+    },
+    {
+      "id": "3df451aa-b329-421f-8307-3df4fa6b79d1",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 4962809,
+      "name": "Yim Sa-rang",
+      "character": "Kwon Bom [Ballerina]",
+      "profilePath": "/mSzO54umKtq86SieEaU9FAZcwzG.jpg",
+      "order": 15
+    },
+    {
+      "id": "355bddfa-fa1c-4e0e-99cc-d04e3f6be938",
+      "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+      "tmdbPersonId": 5814750,
+      "name": "Choi Soo-min",
+      "character": "So-yeong",
+      "profilePath": "/9DZGNCkoFvJBPlVLExwtoR5yUSv.jpg",
+      "order": 16
+    }
+  ],
+  "defaultSeason": {
+    "id": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+    "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+    "tmdbId": 183078,
+    "seasonNumber": 1,
+    "name": "Season 1",
+    "overview": "A 70-year-old with a dream and a 23-year-old with a gift lift each other out of harsh realities and rise to the challenge of becoming ballerinos.",
+    "posterPath": "/8XNj2fN7TwSazpRfvE27VJA65SJ.jpg",
+    "airDate": "2021-03-22",
+    "episodeCount": 12,
+    "isPublished": true,
+    "createdAt": "2026-04-02T17:01:54.911Z",
+    "updatedAt": "2026-04-02T17:01:54.911Z",
+    "episodes": [
+      {
+        "id": "d9ba4301-bdcc-46f7-8d44-53d240557a4c",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2752485,
+        "episodeNumber": 1,
+        "name": "Episode 1",
+        "overview": "A devastating loss and an unfulfilled dream lead Sim Deok-chul to a ballet studio. Lee Chae-rok's real-life troubles disrupt his training.",
+        "stillPath": "/q8PCl0lJfcjek22KPKvPrqgmr30.jpg",
+        "airDate": "2021-03-22",
+        "runtime": 67,
+        "voteAverage": "7.5",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "04fa6915-f2f4-42fe-adca-cd58aa3dad86",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2770447,
+        "episodeNumber": 2,
+        "name": "Episode 2",
+        "overview": "Deok-chul is eager to prove his capabilities as a student and manager. A dismayed Chae-rok agrees to teach him under one condition.",
+        "stillPath": "/sezImWPLbz9rrUaMGGI1qgmHvpT.jpg",
+        "airDate": "2021-03-23",
+        "runtime": 71,
+        "voteAverage": "8",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "a00be19a-0a0c-4879-ba14-7a1d8517ca90",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803877,
+        "episodeNumber": 3,
+        "name": "Episode 3",
+        "overview": "Deok-chul helps Chae-rok fend off an antagonizer and a cold, while Chae-rok backs Deok-chul\u2019s decision to pursue ballet despite his wife\u2019s disapproval.",
+        "stillPath": "/vMBLvtkgJTaoXD3VmzsGPFmJ3BY.jpg",
+        "airDate": "2021-03-29",
+        "runtime": 61,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": false
+      },
+      {
+        "id": "14f52d6d-8248-421c-a66c-b989a002e628",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803878,
+        "episodeNumber": 4,
+        "name": "Episode 4",
+        "overview": "A downhearted Deok-chul gives in to his family\u2019s protests over his new hobby. Chae-rok quits his part-time job to prepare for an upcoming competition.",
+        "stillPath": "/reWDLlVCjXGbakGOcVkDLP64Vli.jpg",
+        "airDate": "2021-03-30",
+        "runtime": 63,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "5070af7d-2c28-48d3-8abd-20e944f1b75f",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803879,
+        "episodeNumber": 5,
+        "name": "Episode 5",
+        "overview": "Sim Eun-ho gathers the courage to search for her true source of joy. Deok-chul and Choi Hae-nam invite a nervous Chae-rok into their warm home.",
+        "stillPath": "/8lnUdKU1xgMEHoF5S0ro8fy5JIW.jpg",
+        "airDate": "2021-04-05",
+        "runtime": 64,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "61f65e2f-dc30-4053-8e16-f727737ac407",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803880,
+        "episodeNumber": 6,
+        "name": "Episode 6",
+        "overview": "Yang Ho-beom takes a spiteful jab at Chae-rok, who steps closer to his goal. Ki Seung-joo advises Chae-rok against a possibly career-ending move.",
+        "stillPath": "/csTEzc3cp5O7jw0uoEfJgWRPOo9.jpg",
+        "airDate": "2021-04-06",
+        "runtime": 62,
+        "voteAverage": "8",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "eb148649-ba78-4a3f-ae19-dc7fcff59ad9",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803882,
+        "episodeNumber": 7,
+        "name": "Episode 7",
+        "overview": "Hae-nam calls Chae-rok for help when Deok-chul goes missing. Seung-joo and Deok-chul inspire Chae-rok with personal stories of setbacks and recovery.",
+        "stillPath": "/bCWgpLufKnkcEHMLtf4qwcZHejy.jpg",
+        "airDate": "2021-04-12",
+        "runtime": 61,
+        "voteAverage": "8",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "48cacb13-e519-41eb-a028-9c5c8de1e1ed",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803883,
+        "episodeNumber": 8,
+        "name": "Episode 8",
+        "overview": "Chae-rok is devastated to learn of Deok-chul's diagnosis. Following a doctor's appointment, Deok-chul loses his way walking back to the ballet studio.",
+        "stillPath": "/ii7Iq264tra2Lbu8sCIqi9o7M3p.jpg",
+        "airDate": "2021-04-13",
+        "runtime": 60,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "80bcaaaa-1f30-4ccc-8037-e758c54eafa2",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803884,
+        "episodeNumber": 9,
+        "name": "Episode 9",
+        "overview": "Sim Seong-gwan finds inspiration for his documentary close to home. Determined to help Deok-chul take to the stage, Chae-rok trains him for an audition.",
+        "stillPath": "/gEAFAWpMH8crAYtElRhK95384Lj.jpg",
+        "airDate": "2021-04-19",
+        "runtime": 62,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "c895e048-1266-46db-85a0-eda3f29e7f96",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803885,
+        "episodeNumber": 10,
+        "name": "Episode 10",
+        "overview": "Lee Mu-yeong offers Ho-beom his belated apology and encouragement. Out of concern for Deok-chul's health, Chae-rok tells him to quit learning ballet.",
+        "stillPath": "/oBumiqqlPqCx36UKy8tEIK4BVtu.jpg",
+        "airDate": "2021-04-20",
+        "runtime": 62,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "daa6af58-05c9-4cfb-b591-651e1d3463e2",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803886,
+        "episodeNumber": 11,
+        "name": "Episode 11",
+        "overview": "Sim Seong-san is forced to take the fall for a mishap at work. Deok-chul and Chae-rok practice for their duet performance.",
+        "stillPath": "/v0vXeIyaz1DTTkIzqqiuz8JjoVd.jpg",
+        "airDate": "2021-04-26",
+        "runtime": 64,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      },
+      {
+        "id": "14d07d98-087c-4da1-a80b-05c4a665898f",
+        "seasonId": "9b480d86-3b37-4165-a22b-cd2970e25c99",
+        "tvSeriesId": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+        "tmdbId": 2803887,
+        "episodeNumber": 12,
+        "name": "Episode 12",
+        "overview": "On the day of the ballet gala, Deok-chul is advised against performing, but Chae-rok is set on helping him achieve his dream of soaring onstage.",
+        "stillPath": "/lAhfUInuDwyCbO1M5qIHy0y5OZC.jpg",
+        "airDate": "2021-04-27",
+        "runtime": 68,
+        "voteAverage": "9",
+        "quality": null,
+        "viewCount": 0,
+        "shareCount": 0,
+        "isPublished": true,
+        "createdAt": "2026-04-02T17:01:54.915Z",
+        "updatedAt": "2026-04-02T17:01:54.915Z",
+        "hasVideo": true
+      }
+    ]
+  },
+  "requestedBy": null,
+  "collections": [],
+  "surfaceAds": [
+    {
+      "id": "cc26da83-d35f-40eb-81c2-678c1c5e4f15",
+      "name": "QQ808",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVdv15g0rec7BwHwomWIe6OrX1VUr3raERKM7d5QRUsdtfIEvpojxHWDY8-pNy-JvDuI9iax0A0I64sweNEVyVTd37zbUxXnMvEljVRP0-sP57mKkukcYAGTJZ3YNLd6Y0Lc2uVlw8tGKDT13dgKsRLOWU5cDHy9qh2H_NxOiBrnRqJLYzovUhiDpwxjMu/s1456/Gif-ADs-808_Idlix.gif",
+      "targetUrl": "https://rebrand.ly/ff3px2/ID808",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "aea67fba-d02a-4aa0-bc34-cd3b0fd6c618",
+      "name": "QQ188",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9OIWFX9v9UusJCLMY8_C45MtxQrXVocTfKTHdqMNGUpMYaCVgPzaErHrJjqOVMYtvypD_L1TwP38JtzVpVNpM85xgCyZ_LfHRmZbaA9NYh6z1OTF6wR-M-B36fn-CA9iStZPwJ6z4fnCjLGlM6sfSfJeOjxl9Avuh6YjvaWYt0WthabAblh3oKvIPiv7k/s1456/Gif-ADs-188_Idlix.gif",
+      "targetUrl": "https://rebrand.ly/z8vmrk8/ID18",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "926f83bd-4272-4887-8a39-e9c9c1b54bb7",
+      "name": "QQ1X2",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhASW4mNkEoNvqL2gghL9anztiv_u1UVAyJqxmwqz1ssJlIrVmCseJm_5_R2sUOXrI0VYUHNZoVj-ted8kQ_LYsjkOsFf-xH4IB6E4FB4TaKlWroBVPlhz0jZ57itb2wltDGM8rUFGy8xp_e-TswqUYAVft4NPjsuRA7724f3QEZ3KnaMw4lASnJixawMnc/s1456/Gif-ADs-1X2_Idlix.gif",
+      "targetUrl": "https://rebrand.ly/phwija/ID1X2",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "301f25ed-a5b2-4735-b7c3-b9766f530c65",
+      "name": "QQ8889",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjejR2cUl0KpQSyHykdJMf9gnWmU-3UqAfIurd5wqR2tWaVNWy8Q9uGVXeiJ_btZx_coOm1M2RNvh25pJ3Lt2WKz1kUcYhjPgFkL6rUW2rIhQlWNNo8CBFM6aHsC7E8b6TqPn7i0mqI9XsbJTFul7WsjSfIObOcmIZcfrti7vL9Bit0G1hhEjpvEHPDuXNh/s1456/Gif-ADs-8889_Idlix.gif",
+      "targetUrl": "https://rebrand.ly/7cbjp/ID8889",
+      "htmlContent": null,
+      "config": {}
+    }
+  ],
+  "homepageAds": [
+    {
+      "id": "cbc6b2bc-38d2-48d8-86e4-3a5463e03060",
+      "name": "QQ888",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAzwmfzEYz7Mb0Iupvbq2ZxltYuH7BSwBoiO86wtvKpVRPc1n_kv89sBrYbIAyjRMDn66fl1jsvThOyGdWEEJ_WaVtqPxd87-TD5BGIgYyIqynFJkJm9fMnq9_F9tyPi1NuLG31eVEEacIuhsmruRG0A-XyYBPP_E41T1ZUqc1DRgPoA/s1600/Gif-Ads_QQ888BET_728x90_kanan-2.gif",
+      "targetUrl": "https://rebrand.ly/qq888betidlxx",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "9f3c9b34-26e8-428c-b573-f4d7873981d0",
+      "name": "QQ101",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4VpjRn3hsBeXL4mjQQOPkYMnjs6TmL3S6Mku58tkCZ0OD4W0s26m_hbH6oSS3Yf6rhGdTjI4XNik31Gs_iQYtqptlhlZoKqqcQYxXtdSQGcFQRzPUQa-MCWvJa1i0h5K6zbc38q0r928fz9mKiIiwsqH-DHACM74cODHlMaZz0NHHnw/s1600/Gif-Ads_QQ101_728x90_kiri-1.gif",
+      "targetUrl": "https://rebrand.ly/qq101idlxx",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "787b67a7-8673-4ab4-8c4a-344030e99be8",
+      "name": "QQ724",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0BeeLsSxM_96K8Bh8w53E57fuVKXJg8dfm_SUl_hebLo-tEcMXJNN9kTvoZqWjSj3f83AkaPJwXvJrGWWLljfL2rc0QD37G5Eep68YiARiFIXQm6yZ3zYotbb9w0XpzLu5lea5Lh7LYgX-XP3Fqp38snFzgjoEEx8-Z9lxJfkbo93Nw/s1600/Gif-Ads_QQ724_728x90_kiri-2.gif",
+      "targetUrl": "https://rebrand.ly/qq724idlxx",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "f9bf7833-d67c-456a-b87b-390d64f09d35",
+      "name": "QQ882",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIqxWn0Q6CZFzrdk9lrxNY9o7LJDP8YgJMIOEwZ61vniM6glO3UI6IFcXhOZ4sjyecJBErb5XGawQi84kbXRwIqtUh9gJU8Frx_eLiCBtheJ6Wr9knA8FJj-S3ac7rmSjupBEvziDOwgWymO-H3i6x1Wd7xU_9jbOKGGK6EfZrhiHMfQ/s1600/Gif-Ads_QQ882_728x90_kanan-3.gif",
+      "targetUrl": "https://rebrand.ly/qq882idlxx",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "a834efbf-7f50-41d2-9f52-f52570431919",
+      "name": "QQ828",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf821TfCfGP97BjTJ01DhR0damDoyiphbWTZWGTvFFvrquwj_MDDGfyOTN8ncgLM7ttH0ObTC2Kqr7fELEoOEjJD3vYFoFtYIAHxzqsrHLquA4P3S-zPNW2RcHnhinK7Nk1ojXPSkf8b8J9UfwLIbZhlwD4WxMR0PRvzbMgQbolVrj6w/s1600/Gif-Ads_QQ828_728x90_kiri-3.gif",
+      "targetUrl": "https://rebrand.ly/qq828idlxx",
+      "htmlContent": null,
+      "config": {}
+    },
+    {
+      "id": "f918a74c-2287-4de2-8f1b-14b8cc2fb946",
+      "name": "QQ801",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ2MolUFtRZWqdVqsHp0m4pxUkDX6k4UT4g_VyNuClp4O46JoDoF440McyWw1aZ7XfuK-r8BkliWuivWiSYZaLXED10fhz41ATwKdpHolQXwgCGah8ge0HOU3YmU30EKwx5alG9Ef_tM9hi3stEcyuMThsp8cTRiU7rPq3C23c-VVPpw/s1600/Gif-Ads_QQ801_728x90_kanan-1.gif",
+      "targetUrl": "https://rebrand.ly/qq801idlxx",
+      "htmlContent": null,
+      "config": {}
+    }
+  ],
+  "promoModals": []
+}

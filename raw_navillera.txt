@@ -1,0 +1,20 @@
+{
+  "id": "9fc67318-f819-49dc-adf2-df59e2e62ed7",
+  "contentType": "tv_series",
+  "title": "Navillera",
+  "originalTitle": "\ub098\ube4c\ub808\ub77c",
+  "overview": "A 70-year-old with a dream and a 23-year-old with a gift lift each other out of harsh realities and rise to the challenge of becoming ballerinos.",
+  "genres": [
+    "Drama"
+  ],
+  "originalLanguage": "ko",
+  "voteAverage": 8.6,
+  "viewCount": 38,
+  "popularityScore": 3,
+  "posterPath": "/pBd6pEhszsWk95TrUqo4bdXhH8T.jpg",
+  "backdropPath": "/ylS5KdDgb8s4Y7P3sDifrizvmA4.jpg",
+  "slug": "navillera-2021",
+  "firstAirDate": "2021-03-22",
+  "numberOfSeasons": 1,
+  "commentCount": 0
+}
