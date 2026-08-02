@@ -961,6 +961,40 @@ class IdlixDownloaderCLI:
                 input("\nProses selesai. Tekan Enter untuk kembali...")
                 break
 
+    def check_movie_available(self, slug):
+        """Check if a movie is already uploaded & registered in the backend."""
+        import requests
+        backend_url = os.getenv("IMUTFLIX_BACKEND_URL", "http://localhost:3001")
+        url = f"{backend_url.rstrip('/')}/api/episodes/available"
+        params = {"slug": slug, "type": "movie"}
+        try:
+            res = requests.get(url, params=params, timeout=5)
+            if res.status_code == 200:
+                return res.json().get("isAvailable", False)
+        except Exception:
+            pass
+        return False
+
+    def check_episode_available(self, slug, season, episode):
+        """Check if a specific episode is already uploaded & registered in the backend."""
+        import requests
+        backend_url = os.getenv("IMUTFLIX_BACKEND_URL", "http://localhost:3001")
+        url = f"{backend_url.rstrip('/')}/api/episodes/available"
+        params = {"slug": slug, "type": "tvshows"}
+        try:
+            res = requests.get(url, params=params, timeout=5)
+            if res.status_code == 200:
+                data = res.json()
+                if data.get("isAvailable"):
+                    seasons = data.get("seasons", [])
+                    for s in seasons:
+                        if s.get("seasonNumber") == season:
+                            if episode in s.get("episodes", []):
+                                return True
+        except Exception:
+            pass
+        return False
+
     def run_batch_file_download(self):
         """Read URLs from a text file and download them automatically in non-interactive mode."""
         import os
@@ -1022,6 +1056,11 @@ class IdlixDownloaderCLI:
             guessed_title = slug.replace("-", " ").title()
             
             if media_type == 'movie':
+                # Check backend database availability first
+                if self.check_movie_available(slug):
+                    print(f"ℹ️ [Skip] Film '{guessed_title}' sudah terdaftar di backend database. Melewati unduhan.")
+                    continue
+                    
                 tmdb_id = explicit_tmdb_id if explicit_tmdb_id else self.prompt_tmdb_id(guessed_title, 'movie', auto_select=True)
                 stream_data = self.extract_stream_url('movie', slug)
                 if not stream_data:
@@ -1070,6 +1109,11 @@ class IdlixDownloaderCLI:
                     ep_num = ep["episode"]
                     ep_title = ep["title"]
                     
+                    # Check backend database availability first for this episode
+                    if self.check_episode_available(slug, s_num, ep_num):
+                        print(f"ℹ️ [Skip] Episode S{s_num:02d}E{ep_num:02d} - {ep_title} sudah terdaftar di backend database. Melewati.")
+                        continue
+                        
                     print(f"\n[{ep_idx + 1}/{len(all_episodes)}] Memproses S{s_num:02d}E{ep_num:02d}: {ep_title}")
                     stream_data = self.extract_stream_url('series', slug, s_num, ep_num)
                     if not stream_data:
