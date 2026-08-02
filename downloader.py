@@ -983,25 +983,35 @@ class IdlixDownloaderCLI:
         with open(filename, "r") as f:
             lines = f.readlines()
             
-        urls = []
+        items = []
         for line in lines:
             line = line.strip()
             if line and not line.startswith("#"):
-                urls.append(line)
+                if "|" in line:
+                    parts = line.split("|")
+                    url = parts[0].strip()
+                    explicit_id = parts[1].strip()
+                    explicit_id = int(explicit_id) if explicit_id.isdigit() else None
+                    items.append((url, explicit_id))
+                else:
+                    items.append((line, None))
                 
-        if not urls:
+        if not items:
             print("ℹ️ Tidak ada URL yang valid ditemukan di dalam berkas.")
             input("\nTekan Enter untuk kembali...")
             return
             
-        print(f"Ditemukan {len(urls)} URL dalam antrean download.")
+        print(f"Ditemukan {len(items)} item dalam antrean download.")
         confirm = input("Apakah Anda yakin ingin memproses semua URL secara otomatis? (y/n) [Default: y]: ").strip().lower()
         if confirm == 'n':
             return
             
-        for idx, url in enumerate(urls):
+        for idx, item_data in enumerate(items):
+            url, explicit_tmdb_id = item_data
             print(f"\n==================================================")
-            print(f"PROSES [{idx + 1}/{len(urls)}]: {url}")
+            print(f"PROSES [{idx + 1}/{len(items)}]: {url}")
+            if explicit_tmdb_id:
+                print(f"Menggunakan TMDB ID manual: {explicit_tmdb_id}")
             print("==================================================")
             
             media_type, slug = self.parse_idlix_url(url)
@@ -1012,7 +1022,7 @@ class IdlixDownloaderCLI:
             guessed_title = slug.replace("-", " ").title()
             
             if media_type == 'movie':
-                tmdb_id = self.prompt_tmdb_id(guessed_title, 'movie', auto_select=True)
+                tmdb_id = explicit_tmdb_id if explicit_tmdb_id else self.prompt_tmdb_id(guessed_title, 'movie', auto_select=True)
                 stream_data = self.extract_stream_url('movie', slug)
                 if not stream_data:
                     print(f"⚠️ Gagal mendapatkan link stream untuk: {guessed_title}")
@@ -1025,7 +1035,7 @@ class IdlixDownloaderCLI:
                     non_interactive=True
                 )
             else:
-                tmdb_id = self.prompt_tmdb_id(guessed_title, 'series', auto_select=True)
+                tmdb_id = explicit_tmdb_id if explicit_tmdb_id else self.prompt_tmdb_id(guessed_title, 'series', auto_select=True)
                 print(f"\n[Series] Mengambil informasi season dan episode untuk: {guessed_title}...")
                 detail = self.get_series_detail(slug)
                 if not detail:
