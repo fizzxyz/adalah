@@ -26,11 +26,12 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 class IdlixDownloaderCLI:
-    def __init__(self, api_url=DEFAULT_API_URL, download_dir=DEFAULT_DOWNLOAD_DIR, use_drive=False, workers=4):
+    def __init__(self, api_url=DEFAULT_API_URL, download_dir=DEFAULT_DOWNLOAD_DIR, use_drive=False, workers=4, storage_provider='r2'):
         self.api_url = api_url.rstrip('/')
         self.download_dir = download_dir
         self.use_drive = use_drive
         self.workers = workers
+        self.storage_provider = storage_provider.lower()
         
         # Initialize Google Drive Uploader
         self.drive_uploader = GoogleDriveUploader()
@@ -141,11 +142,11 @@ class IdlixDownloaderCLI:
         else:
             s3_key = f"imutflix/series/{tmdb_id}/S{season:02d}E{episode:02d}{file_ext}"
             
-        print(f"[S3] Memulai upload ke S3 dengan key: {s3_key}...")
-        s3_url = upload_file_to_s3(filepath, s3_key)
+        print(f"[S3] Memulai upload ke S3 ({self.storage_provider.upper()}) dengan key: {s3_key}...")
+        s3_url = upload_file_to_s3(filepath, s3_key, self.storage_provider)
         
         if not s3_url:
-            print("[S3] ❌ Gagal mengunggah file ke S3.")
+            print(f"[S3] ❌ Gagal mengunggah file ke S3 ({self.storage_provider.upper()}).")
             return False
             
         print(f"[S3] ✅ Sukses mengunggah file. URL: {s3_url}")
@@ -168,7 +169,8 @@ class IdlixDownloaderCLI:
             "episode": episode,
             "s3Key": s3_key,
             "s3Url": s3_url,
-            "filename": filename
+            "filename": filename,
+            "storageProvider": self.storage_provider
         }
         
         print("[Database] Mendaftarkan file ke database backend...")
@@ -1133,6 +1135,34 @@ class IdlixDownloaderCLI:
         print("==================================================")
         input("\nTekan Enter untuk kembali ke menu utama...")
 
+    def pilih_storage_provider(self):
+        """Interactively select S3 storage provider."""
+        import os
+        providers_str = os.getenv("STORAGE_PROVIDERS", "r2")
+        providers = [p.strip().lower() for p in providers_str.split(",")]
+        
+        print("\nPilih Storage S3 Provider:")
+        for idx, provider in enumerate(providers):
+            active_marker = " [AKTIF]" if provider == self.storage_provider else ""
+            print(f"  {idx + 1}. {provider.upper()}{active_marker}")
+        print(f"  {len(providers) + 1}. Kembali")
+        
+        pilih = input(f"\nPilih (1-{len(providers) + 1}): ").strip()
+        try:
+            val = int(pilih)
+            if 1 <= val <= len(providers):
+                self.storage_provider = providers[val - 1]
+                print(f"✅ Storage S3 aktif berhasil diubah ke: {self.storage_provider.upper()}")
+                time.sleep(1.5)
+            elif val == len(providers) + 1:
+                return
+            else:
+                print("⚠️ Pilihan tidak valid.")
+                time.sleep(1)
+        except ValueError:
+            print("⚠️ Input tidak valid.")
+            time.sleep(1)
+
     def main_loop(self):
         """Main CLI event loop."""
         # Ensure download directory exists
@@ -1145,6 +1175,7 @@ class IdlixDownloaderCLI:
             print(f"  - API URL        : {self.api_url}")
             print(f"  - Folder Unduhan : {os.path.abspath(self.download_dir)}")
             print(f"  - Google Drive   : {'AKTIF' if self.drive_active else 'NON-AKTIF / TIDAK TERSEDIA'}")
+            print(f"  - Storage S3     : {self.storage_provider.upper()}")
             print("==================================================")
             
             print("\nMenu Utama:")
@@ -1152,17 +1183,21 @@ class IdlixDownloaderCLI:
             print("  2. Masukkan URL IDLIX langsung")
             print("  3. Hubungkan ke Google Drive")
             print("  4. Sinkronisasi Berkas Lokal ke S3 & Database")
-            print("  5. Auto Download Banyak URL dari File (batch_urls.txt)")
-            print("  6. Keluar")
+            print("  5. Pilih Storage S3 Provider")
+            print("  6. Auto Download Banyak URL dari File (batch_urls.txt)")
+            print("  7. Keluar")
             
-            pilihan = input("\nPilih menu (1-6): ").strip()
+            pilihan = input("\nPilih menu (1-7): ").strip()
             
-            if pilihan == '6':
+            if pilihan == '7':
                 print("\nTerima kasih telah menggunakan IDLIX Downloader. Sampai jumpa!")
                 break
                 
-            elif pilihan == '5':
+            elif pilihan == '6':
                 self.run_batch_file_download()
+                
+            elif pilihan == '5':
+                self.pilih_storage_provider()
                 
             elif pilihan == '4':
                 self.sync_local_files_to_s3()
@@ -1260,6 +1295,7 @@ if __name__ == "__main__":
     parser.add_argument("--out-dir", default=DEFAULT_DOWNLOAD_DIR, help="Direktori penyimpanan video (default: downloads)")
     parser.add_argument("--drive", action="store_true", help="Aktifkan sinkronisasi otomatis ke Google Drive")
     parser.add_argument("--workers", type=int, default=4, help="Jumlah thread worker untuk download paralel (default: 4)")
+    parser.add_argument("--provider", default="r2", help="Storage S3 provider yang digunakan (default: r2)")
     
     args = parser.parse_args()
     
@@ -1267,7 +1303,8 @@ if __name__ == "__main__":
         api_url=args.api_url,
         download_dir=args.out_dir,
         use_drive=args.drive,
-        workers=args.workers
+        workers=args.workers,
+        storage_provider=args.provider
     )
     
     try:
