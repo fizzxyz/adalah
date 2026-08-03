@@ -138,7 +138,7 @@ class GoogleDriveUploader:
         try:
             from tqdm import tqdm
             
-            media = MediaFileUpload(filepath, mimetype=mimetype, resumable=True)
+            media = MediaFileUpload(filepath, mimetype=mimetype, chunksize=5*1024*1024, resumable=True)
             request = self.service.files().create(body=file_metadata, media_body=media)
             
             response = None
@@ -151,8 +151,9 @@ class GoogleDriveUploader:
                         pbar.n = int(status.resumable_progress)
                         pbar.refresh()
             
-            print(f"[Drive] ✅ Berhasil mengunggah '{filename}' ke Google Drive! File ID: {response.get('id')}")
-            return True
+            file_id = response.get('id')
+            print(f"[Drive] ✅ Berhasil mengunggah '{filename}' ke Google Drive! File ID: {file_id}")
+            return file_id
         except Exception as e:
             print(f"\n[Drive Error] Gagal mengunggah berkas: {str(e)}")
-            return False
+            return None

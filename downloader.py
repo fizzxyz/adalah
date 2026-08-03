@@ -124,32 +124,52 @@ class IdlixDownloaderCLI:
         return None
 
     def handle_s3_upload_and_register(self, filepath, title, media_type, slug, tmdb_id, season=None, episode=None):
-        """Upload downloaded file to S3 and register in imutflix-backend database."""
+        """Upload downloaded file to S3 or Google Drive, and register in imutflix-backend database."""
         import os
         import requests
-        from s3 import upload_file_to_s3
         
         if not tmdb_id:
-            print("[S3] ⚠️ Registrasi S3 dilewati karena TMDB ID tidak tersedia.")
+            print("[Registrasi] ⚠️ Registrasi dilewati karena TMDB ID tidak tersedia.")
             return False
             
-        print("\n================== UNGGAH KE STORAGE S3 ==================")
         filename = os.path.basename(filepath)
-        file_ext = os.path.splitext(filename)[1]
         
-        if media_type == 'movie':
-            s3_key = f"imutflix/movies/{tmdb_id}{file_ext}"
+        if self.storage_provider == 'gdrive':
+            # ── Google Drive Upload ──
+            if not self.drive_active:
+                print("\n[Drive] Menginisialisasi otorisasi Google Drive...")
+                if self.drive_uploader.is_available() and self.drive_uploader.authenticate():
+                    self.drive_active = True
+                else:
+                    print("[Drive] ❌ Gagal menginisialisasi Google Drive. Registrasi dibatalkan.")
+                    return False
+            
+            print("\n================== UNGGAH KE GOOGLE DRIVE ==================")
+            file_id = self.drive_uploader.upload_file(filepath, folder_name=title)
+            if not file_id:
+                print("[Drive] ❌ Gagal mengunggah file ke Google Drive.")
+                return False
+                
+            s3_key = file_id
+            s3_url = f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media"
         else:
-            s3_key = f"imutflix/series/{tmdb_id}/S{season:02d}E{episode:02d}{file_ext}"
+            # ── S3 Storage Upload ──
+            from s3 import upload_file_to_s3
+            print("\n================== UNGGAH KE STORAGE S3 ==================")
+            file_ext = os.path.splitext(filename)[1]
+            if media_type == 'movie':
+                s3_key = f"imutflix/movies/{tmdb_id}{file_ext}"
+            else:
+                s3_key = f"imutflix/series/{tmdb_id}/S{season:02d}E{episode:02d}{file_ext}"
+                
+            print(f"[S3] Memulai upload ke S3 ({self.storage_provider.upper()}) dengan key: {s3_key}...")
+            s3_url = upload_file_to_s3(filepath, s3_key, self.storage_provider)
             
-        print(f"[S3] Memulai upload ke S3 ({self.storage_provider.upper()}) dengan key: {s3_key}...")
-        s3_url = upload_file_to_s3(filepath, s3_key, self.storage_provider)
-        
-        if not s3_url:
-            print(f"[S3] ❌ Gagal mengunggah file ke S3 ({self.storage_provider.upper()}).")
-            return False
-            
-        print(f"[S3] ✅ Sukses mengunggah file. URL: {s3_url}")
+            if not s3_url:
+                print(f"[S3] ❌ Gagal mengunggah file ke S3 ({self.storage_provider.upper()}).")
+                return False
+                
+            print(f"[S3] ✅ Sukses mengunggah file. URL: {s3_url}")
         
         # Register to imutflix-backend DB
         backend_url = os.getenv("IMUTFLIX_BACKEND_URL", "http://localhost:3000")
@@ -716,7 +736,7 @@ class IdlixDownloaderCLI:
                 print("mengurangi kualitas, letakkan 'ffmpeg.exe' di folder aplikasi ini.")
             print("="*65 + "\n")
 
-            if self.drive_active:
+            if self.drive_active and self.storage_provider != 'gdrive':
                 # Upload Video
                 upload_success = self.drive_uploader.upload_file(filepath, folder_name=show_title)
                 
