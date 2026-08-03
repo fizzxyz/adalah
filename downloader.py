@@ -145,7 +145,15 @@ class IdlixDownloaderCLI:
                     return False
             
             print("\n================== UNGGAH KE GOOGLE DRIVE ==================")
-            file_id = self.drive_uploader.upload_file(filepath, folder_name=title)
+            # Resolve structured folders matching S3 structure (imutflix/movies or imutflix/series/{tmdb_id})
+            root_id = self.drive_uploader.get_or_create_folder("imutflix")
+            if media_type == 'movie':
+                parent_id = self.drive_uploader.get_or_create_folder("movies", parent_id=root_id)
+            else:
+                series_root_id = self.drive_uploader.get_or_create_folder("series", parent_id=root_id)
+                parent_id = self.drive_uploader.get_or_create_folder(str(tmdb_id), parent_id=series_root_id)
+            
+            file_id = self.drive_uploader.upload_file(filepath, parent_folder_id=parent_id)
             if not file_id:
                 print("[Drive] ❌ Gagal mengunggah file ke Google Drive.")
                 return False
